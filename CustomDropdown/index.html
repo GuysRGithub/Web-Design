@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul class="dropdown">
+        <input type="text" value="Select Option" readonly>
+
+        <ul class="options">
+            <li data-value="one">Options One</li>
+            <li data-value="one">Options One</li>
+            <li data-value="one">Options One</li>
+            <li data-value="one">Options One</li>
+            <li data-value="one">Options One</li>
+            <li data-value="one">Options One</li>
+            <li data-value="one">Options One</li>
+            <li data-value="one">Options One</li>
+            <li data-value="one">Options One</li>
+            <li data-value="one">Options One</li>
+            <li data-value="one">Options One</li>
+            <li data-value="one">Options One</li>
+        </ul>
+    </ul>
+
+    <script>
+        let dropdown = document.querySelector(".dropdown")
+        let options = document.querySelector(".options")
+
+        dropdown.addEventListener('click', function () {
+            dropdown.classList.toggle("show")
+        })
+
+        // Array(options.children).forEach(element => {
+
+        //     console.log("Options", element);
+        //     console.log("Fuck", options[element]);
+        //     element.addEventListener("click", function () {
+        //         console.log("Elemet click");
+        //     })
+        // })
+    </script>
+</body>
+
+</html>

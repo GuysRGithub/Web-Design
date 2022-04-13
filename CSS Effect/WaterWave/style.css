@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.content
+{
+    position: relative;
+}
+.content h2 
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+.content h2:nth-child(1)
+{
+    color: transparent;
+    -webkit-text-stroke: 1px #ce2cd4;
+}

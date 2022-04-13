@@ -1,0 +1,184 @@
+body {
+  font: 15px/1.5;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: linear-gradient(to left, #697c81, #84c7e9, #8e949e);
+  padding: 0px;
+  margin: 0px;
+  /* full width and height */
+}
+header {
+  color: #ffffff;
+  background: #3b3938;
+  min-height: 80px;
+  border-bottom: #0e81ce solid 3px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  /* padding: 10px 0px 20px; */
+}
+header .container-header {
+  padding: 0px !important;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+header .page-title {
+  float: left;
+}
+header nav {
+  vertical-align: center;
+  line-height: 60px;
+  margin: 0;
+  /* align center vertical */
+}
+
+header .navigation-web li {
+  background-size: 100% 100%;
+  list-style: none;
+  padding-left: 20px;
+  float: right;
+  display: inline-end;
+}
+#description {
+  min-height: 360px;
+  background: url(../images/air.jpg) no-repeat;
+  background-size: 100% 100%;
+  text-align: left;
+  border-bottom: #6eb2d4 1px solid;
+  color: #ffffff;
+  /* margin-top: -20px; */
+}
+.container-description
+{
+  padding-top: 80px;
+  width: 80%;
+  margin: auto;
+  overflow: hidden; 
+  /* hide white space above showcase */
+}
+.container-description p
+{
+  padding-top: 20px;
+}
+
+
+/* Subcribe */
+.subcribe 
+{
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+  justify-content: center;
+}
+
+.subcribe .subcribe-container
+{
+  width: 80%;
+  /* 80% width to float right */
+}
+.subcribe .subcribe-container h1
+{
+  padding-top: 10px;
+  margin: 0;
+  float: left;
+}
+.subcribe form
+{
+  margin-right: 12px;
+  float: right;
+  transition: 0.5s;
+}
+.subcribe input[type="email"]
+{
+  outline: none;
+  background: rgb(224, 228, 238);
+  border-radius: 12px;
+  padding: 8px;
+  height: 28px;
+  width: 280px;
+  transition: 0.5s;
+}
+.subcribe input[type='email']:hover
+{
+  color: #126831;
+  background: #65d4a6;
+  box-shadow: 0 0 10px #118888, 0 0 20px #54d669, 0 0 20px #21e2d2;
+}
+
+.subcribe-container form button 
+{
+  cursor: pointer;
+  outline: none;
+  border-radius: 12px;
+  height: 48px;
+  padding: 0 20px 0 20px;
+}
+.subcribe-container form button:hover
+{
+  color: #126831;
+  background: #65d4a6;
+  box-shadow: 0 0 10px #118888, 0 0 20px #54d669, 0 0 20px #21e2d2;
+}
+.grid-view
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.layout
+{
+  display: flex;
+  flex-direction: row;
+}
+.menu
+{
+  background: #4246493a;
+  margin: 18px 8px 16px 26px;
+  border-right: #35424a solid 3px;
+  width: 20%;
+  float: left;
+  border-radius: 12px;
+}
+.menu li
+{
+  border-bottom: #525557 solid 2px;
+  list-style: none;
+  width: 80%;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  justify-content: space-around;
+
+}
+.menu li .icon-leading
+{
+  float: left;
+  height: 32px;
+  width: auto;
+}
+.menu li h2
+{
+  padding-left: 20px;
+  margin-left: 20px;
+}
+.grid-view
+{
+  margin: 18px 8px 16px 26px;
+  background: #7bd2e7be;
+  width: 80%;
+  float: right;
+  border-radius: 12px;
+}
+.grid-view div
+{
+  margin: 20px;
+  padding: 0 48px 0 48px;
+  text-align: justify;
+  border-radius: 12px;
+  border: #3da0e250 solid 2px;
+}
+.grid-view h1
+{
+  text-align: start;
+}

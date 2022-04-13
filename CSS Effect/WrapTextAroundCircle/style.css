@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(0, 0, 0);
+}
+
+section {
+    position: relative;
+    width: 100%;
+}
+
+.circle {
+    overflow: hidden;
+    position: relative;
+}
+
+.circle.circle1 {
+    border-radius: 80%;
+    float: left;
+    height: 400px;
+    margin: 20px;
+    width: 400px;
+    shape-outside: ellipse();
+
+}
+
+.circle.circle2 {
+    border-radius: 60%;
+    float: right;
+    height: 200px;
+    margin: 20px;
+    width: 200px;
+    shape-outside: ellipse();
+
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+p {
+    color: #fff;
+    text-align: justify;
+
+}
+
+.circle img {
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    shape-outside: circle();
+}

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #111111;
+    max-width: 100vw;
+}
+
+.container {
+    position: relative;
+    margin-top: 250px;
+    max-width: 480px;
+    transform: skewY(-20deg);
+    color: #fff;
+}
+
+.container .imgBox {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+}
+
+.container .imgBox img {
+    margin-bottom: 16px;
+    height: 160px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale();
+    max-width: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.container .imgBox:hover img:nth-child(3) {
+    transform: translate(100px, -100px);
+}
+.container .imgBox:hover img:nth-child(2) {
+    transform: translate(50px, -50px);
+    opacity: .5;
+}
+
+.container .imgBox:hover img:nth-child(1) {
+    opacity: .1;
+}
+.container h2 {
+    position: relative;
+    font-size: 3em;
+}
+
+.container .skew {
+    transform-origin: top;
+    transform: skewX(45deg);
+}
+
+.container .skew p {
+    letter-spacing: 1px;
+}
+
+.container .skew a {
+    position: relative;
+    padding: 10px 30px;
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    transform: skewX(-45deg);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 16px;
+}

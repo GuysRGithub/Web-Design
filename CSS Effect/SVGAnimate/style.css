@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #06181f;
+}
+.container {
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+    
+.container .icon {
+    width: 200px;
+    
+}
+
+.container .icon path {
+    fill: transparent;
+    stroke-width: 6px;
+    stroke: #31e0ff;
+    
+}
+
+.container .icon.heart path{
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+}
+
+.container .icon.heart:hover path{
+    animation: heart 2s linear forwards;
+}
+@keyframes heart {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 1560;
+    }
+    80% {
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 3120;
+        fill: #31e8ff;
+    }
+}

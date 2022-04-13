@@ -1,0 +1,284 @@
+body {
+  font: 15px/1.5;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: linear-gradient(to left, #697c81, #84c7e9, #8e949e);
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.container h1 {
+  padding-top: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background: #1b1b18;
+  color: #ffffff;
+  min-height: 70px;
+  border-bottom: #0772a7 3px solid;
+  padding: 10px 0px 20px;
+}
+header a {
+  color: #ffffff;
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.navigation {
+  display: inline;
+  margin: 0;
+  padding: 10px;
+}
+header li {
+  display: flex;
+  float: left;
+  margin: 8px;
+  padding: 0 20px 0 20px; /* padding home about service */
+}
+header #brand {
+  float: left;
+}
+header #brand h1 {
+  margin: 0;
+}
+header nav {
+  padding: 0px;
+  float: right;
+}
+header .highlight,
+header .current a {
+  color: rgb(9, 155, 240);
+  font-weight: bold;
+}
+/* showcase */
+/* remember the order of command */
+#showcase {
+  min-height: 360px;
+  background: url("../images/fantasy-3077928_640.jpg") no-repeat;
+  background-size: 100% 100%;
+  text-align: left;
+  border-bottom: #6eb2d4 1px solid;
+  color: #ffffff;
+}
+#showcase h1 {
+  margin-top: 80px;
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+#showcase p {
+  font-size: 1.2rem;
+}
+#newsletter {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+}
+#newsletter h1 {
+  margin: 0;
+  float: left;
+}
+#newsletter .container {
+  width: 80%;
+}
+#newsletter form {
+  margin-right: 12px;
+  float: right;
+}
+#newsletter input[type="email"] {
+  outline: none;
+  background: rgb(97, 105, 121);
+  border-radius: 12px;
+  padding: 8px;
+  height: 28px;
+  width: 280px;
+}
+#newsletter input :placeholder-shown {
+  color: #ffffff;
+}
+.button_summit_email {
+  outline: none;
+  cursor: pointer;
+  height: 48px;
+  background: #8a658a;
+  padding: 0px 20px 0px 20px;
+  padding-left: 24px;
+  color: #ffffff;
+  border-radius: 12px;
+  border-color: #0be42f;
+}
+
+#boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+#boxes .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  padding: 10px;
+  align-content: center;
+  text-align: justify;
+}
+#boxes .box h3 {
+  text-align: center;
+}
+#boxes .box img {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 160px;
+}
+
+/* sidebar */
+
+aside#sidebar {
+  float: right;
+  width: 30%;
+  text-align: justify;
+}
+
+article#main-col {
+  float: left;
+  width: 65%;
+  text-align: justify;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  background: #45565f;
+  margin-top: auto;
+}
+footer#footer-about {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  background: #45565f;
+  margin-top: auto;
+}
+
+/* Service */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 2px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  background: hsl(50, 12%, 80%, 0.2);
+}
+/* End service */
+/* Width <800px */
+@media (max-width: 800px) {
+  header #brand,
+  header nav {
+    padding: 0;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header .navigation {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    /* text-align: start; */
+    /* padding-left: 6%; */
+    /* margin: 0px;
+    padding: 0px;
+    width: 100%;
+    left: 0px; */
+    /* display: block; */
+  }
+  header nav
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* align-self: center; */
+    width: 100%;
+  }
+  header li {
+    /* padding: 0px 10px 0px 10px; */
+    display: inline;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
+  }
+  #newsletter {
+    width: 100%;
+    height: 160px;
+  }
+  #newsletter h1 {
+    text-align: center;
+    padding: 0;
+    padding-bottom: 6px;
+  }
+  #newsletter form {
+    float: none;
+    justify-content: flex-start;
+  }
+  #newsletter input[type="email"] {
+    display: absolute;
+    left: 2px;
+    padding: 0;
+    width: 100%;
+    /* width: 100%; */
+    padding-bottom: 6px;
+  }
+  #newsletter .button_summit_email {
+    display: absolute;
+    left: 0px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 0;
+    width: 100%;
+  }
+  #showcase h1 {
+    margin-top: 20px;
+  }
+  #boxes .box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: #898f8f solid 2px;
+    border-radius: 6px;
+    background: #78aad856;
+    margin-bottom: 6px;
+  }
+  /* if want align item center add all this
+  display, margin, width */
+  #boxes .box img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #boxes {
+    display: block;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+  }
+}

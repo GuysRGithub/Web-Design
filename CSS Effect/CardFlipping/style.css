@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+img {
+    width: 300px;
+    height: 420px;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 420px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.8s;
+}
+
+.card .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.8s;
+}
+
+.card:hover .front {
+    transform: rotateX(-180deg);
+}
+
+.card .back {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.8s;
+}
+
+.card:hover .back {
+    transform: rotateX(0deg);
+}
+
+.card .back .details {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.card .back .details h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.card .back .details h2 span {
+    color: #a7a7a7;
+    font-size: 18px;
+}
+
+.social-icons {
+    padding: 10px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.social-icons a .fa {
+    display: inline-block;
+    transform: translateY(-42px) scale(0.5);
+    opacity: 0.2;
+    transition: 0.8s;
+}
+
+.social-icons a::after,
+.social-icons a::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(45deg, #82c4eb, #0b98e9);
+    border-radius: 50%;
+    filter: blur(12px);
+    opacity: 0.1;
+    transition: 1s;
+    z-index: -1;
+}
+
+.social-icons a::after {
+    filter: blur(80px);
+}
+
+a:hover::after,
+a:hover::before {
+    background: linear-gradient(45deg, #82c4eb, #0b98e9);
+    opacity: 1;
+}
+
+a:hover {
+    background: linear-gradient(45deg, #82c4eb, #0b98e9);
+}
+
+a:hover .fa {
+    transform: scale(1.2);
+    opacity: 1;
+}
